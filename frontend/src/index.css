@@ -1,0 +1,77 @@
+@import "tailwindcss";
+
+:root {
+  --bg-base: #172120;
+  --card-surface: #1E2B2A;
+  --card-hover: #233433;
+  --border-subtle: rgba(255, 255, 255, 0.08);
+  --border-hover: rgba(255, 255, 255, 0.16);
+  --border-accent: rgba(183, 243, 74, 0.3);
+  --text-primary: #F3F1EA;
+  --text-muted: #9FB0AD;
+  --accent-lime: #B7F34A;
+  --accent-lime-hover: #C9FA62;
+}
+
+body {
+  margin: 0;
+  background-color: #172120;
+  color: #F3F1EA;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.font-serif,
+.font-display {
+  font-family: 'Fraunces', Georgia, serif;
+}
+
+.font-sans,
+.font-body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #172120;
+}
+::-webkit-scrollbar-thumb {
+  background: #253735;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #344d4a;
+}
+
+/* Subtle glow effects */
+.bg-radial-glow {
+  background: radial-gradient(circle at 50% 0%, rgba(183, 243, 74, 0.08) 0%, transparent 65%);
+}
+
+.bg-radial-subtle {
+  background: radial-gradient(circle at 80% 10%, rgba(183, 243, 74, 0.05) 0%, transparent 50%),
+              radial-gradient(circle at 20% 90%, rgba(70, 140, 120, 0.06) 0%, transparent 50%);
+}
+
+/* Custom Card styling with rounded-2xl / rounded-3xl */
+.vault-card {
+  background-color: #1E2B2A;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 1.5rem;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.vault-card:hover {
+  border-color: rgba(255, 255, 255, 0.14);
+}

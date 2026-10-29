@@ -1,0 +1,11 @@
+{
+  "name": "skillvault",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "SkillVault Full Stack Monorepo",
+  "scripts": {
+    "dev": "node dev.js",
+    "start": "node dev.js"
+  }
+}

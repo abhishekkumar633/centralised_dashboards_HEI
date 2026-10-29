@@ -1,0 +1,22 @@
+{
+  "name": "skillvault-backend",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "SkillVault API — verified student credentials, jobs, and institutional review",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js",
+    "seed": "node src/seed/run.js"
+  },
+  "dependencies": {
+    "bcryptjs": "^3.0.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.6.1",
+    "express": "^5.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.18.0",
+    "multer": "^2.0.2"
+  }
+}
